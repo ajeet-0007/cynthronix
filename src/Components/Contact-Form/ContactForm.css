@@ -1,0 +1,93 @@
+.contact-form-main{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/DiscoverSkew.png);
+        background-repeat: no-repeat;
+        background-color: rgb(241, 249, 250);
+        background-position-x: right;
+}
+
+.contact-form-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100% !important;
+}
+
+
+.contact-form-div-aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 40% !important;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.contact-form-div-aside div{
+ 
+    text-align: center;
+    padding: 15px;
+}
+
+.contact-form-div-aside div ul {
+    display: flex;
+
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.contact-form-div-aside div ul li{
+    padding: 5px;
+}
+
+.contact-form-div div{
+    width: 100%;
+}
+
+.contact-form-div-right{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 30px;
+            /* background-color: white !important; */
+        
+}
+
+form{
+        width: 100%;
+}
+
+form div{
+    padding: 15px;
+}
+
+@media only screen and (max-width: 744px) {
+    .contact-form-main{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact-form-div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-form-div-aside{
+        width: 100% !important;
+        margin-top: 15px;
+    }
+
+    
+}
+
+

@@ -1,0 +1,30 @@
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    /* padding-left: 350px;
+    /* width: 100%; */
+    width: 100%;
+}
+.nav-item{
+    padding: 20px 60px !important;
+}
+}
+
+@media only screen and (max-width: 744px){
+    .navbar-toggler{
+        border: none;
+        border-radius: 0px;
+    }
+
+    .navbar-toggler-icon{
+        background-color: white;
+    }
+
+    .navbar-collapse{
+        padding: 10px;
+    }
+
+    .nav-item{
+        padding: 10px;
+    }
+}

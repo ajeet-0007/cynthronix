@@ -1,0 +1,51 @@
+.company-main {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    /* height: 600px; */
+    background-image: url(../../assets/DiscoverSkew.png);
+    background-repeat: repeat-y;
+    background-color: rgb(241, 249, 250);
+    background-position-x: right;
+}
+
+.company-main-one {
+    width: 50%;
+}
+
+.company-main-two {
+    width: 50%;
+    padding: 20px;
+}
+
+.company-main-two img{
+    width: 90%;
+    height: 600px;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 744px){
+    .company-main{
+        width: 100%;
+        width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+    }
+    .company-main-one{
+        width: 100%;
+            padding: 20px;
+    }
+
+    .company-main-two{
+        width: 100%;
+    }
+
+        .company-main-two img {
+            width: 100%;
+            height: 350px;
+            padding: 20px;
+        }
+}

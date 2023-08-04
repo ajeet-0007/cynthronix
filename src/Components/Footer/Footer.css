@@ -1,0 +1,69 @@
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    background-image: url(../../assets/DiscoverSkew.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: rgb(241, 249, 250);
+}
+
+.footer-main-first-div {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-main-first-div div p {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div ul li {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    /* list-style-type: none; */
+}
+
+.contact {
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 744px) {
+    .footer-main {
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-main-first-div {
+        width: 100%;
+    }
+
+    .footer-main-first-div div {
+        text-align: center;
+    }
+
+    .footer-main-second-div {
+        /* text-align: center; */
+        width: 100%;
+        padding: 30px;
+    }
+
+    .footer-main-second-div h3 {
+        text-align: center;
+    }
+
+    .footer-main-second-div-list ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0.3rem;
+    }
+}

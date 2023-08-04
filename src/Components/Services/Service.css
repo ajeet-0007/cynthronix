@@ -1,0 +1,38 @@
+.service-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    height: 600px;
+    background-image: url(../../assets/DiscoverSkew.png);
+    background-repeat: repeat-y;
+    background-color: rgba(241, 249, 250, 0.25);
+    background-position-x: right;
+    width: 100%;
+
+  
+}
+
+.service-content{
+    width: 100%;
+    align-items: center;
+    padding: 25px;
+  
+}
+
+.service-content p{
+    display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 744px){
+    .service-main{
+        width: 100%;
+        padding: 30px;
+    }
+}

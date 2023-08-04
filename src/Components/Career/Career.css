@@ -1,0 +1,22 @@
+.carrer-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    padding: 100px;
+    background-image: url(../../assets/DiscoverSkew.png);
+    background-repeat: repeat-y;
+    background-color: rgb(241, 249, 250);
+}
+
+@media only screen and (max-width: 744px){
+    .carrer-main{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .carrer-main-quote{
+        text-align: center;
+    }
+}

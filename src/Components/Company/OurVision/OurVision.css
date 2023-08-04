@@ -1,0 +1,32 @@
+.ourvision-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    /* background-color: rgb(241, 249, 250); */
+    background-image: url(../../../assets/DiscoverSkew.png);
+        background-repeat: no-repeat;
+        background-position-x: left;
+  
+}
+
+.ourvision-main-two{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 744px){
+    .ourvision-main{
+        width: 100%;
+        padding: 30px;
+    }
+        .ourvision-main-two{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+}

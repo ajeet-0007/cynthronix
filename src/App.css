@@ -1,0 +1,10 @@
+.App{
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 744px){
+  .App{
+    width: 100%;
+  }
+}

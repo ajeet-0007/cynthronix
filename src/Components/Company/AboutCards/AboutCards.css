@@ -1,0 +1,47 @@
+.about-cards-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    background-image: url(../../../assets/dotdtory.png);
+        background-repeat: no-repeat;
+        background-position: 92% 0;
+        background-size: auto;
+  
+}
+
+
+
+.card{
+    background-image: url(../../../assets/DiscoverSkew.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 25%;
+    /* border:  solid rgb(7, 7, 7); */
+    box-shadow: 10px 10px grey;
+    transition: all 0.5s linear;
+    
+}
+
+.card:hover{
+    background-color: rgb(8, 112, 182) !important;
+    color: white;
+
+ 
+}
+
+@media only screen and (max-width: 744px){
+    .about-cards-main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+}
