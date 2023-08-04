@@ -51,4 +51,15 @@
                     height: 300px;
                     margin-top: 0px;
                 }
+
+        ul li{
+            /* margin-left: -70px; */
+            /* margin-left: 20px; */
+            padding: 20px 15px;
+        }
+
+        .listdiv{
+            margin-left: 0px !important;
+            padding: 0px !important;
+        }
 }

@@ -82,29 +82,31 @@ function OurServices() {
                             padding: "30px",
                             width: "100%",
                         }}
+                    
+                        className="listdiv"
                     >
-                        <ul style={{ listStyleType: "none", display: "flex" }}>
-                            <li style={{ padding: "20px" }}>
+                        <ul style={{ listStyleType: "none", display: "flex" , justifyContent:"space-evenly"}}>
+                            <li >
                                 <BiLogoFlutter
                                     style={{ width: "40px", height: "40px" }}
                                 />
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <AiFillAndroid
                                     style={{ width: "40px", height: "40px" }}
                                 ></AiFillAndroid>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <BiLogoNodejs
                                     style={{ width: "40px", height: "40px" }}
                                 ></BiLogoNodejs>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <SiMysql
                                     style={{ width: "40px", height: "40px" }}
                                 ></SiMysql>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <BiLogoMongodb
                                     style={{ width: "40px", height: "40px" }}
                                 />
@@ -185,29 +187,30 @@ function OurServices() {
                             padding: "30px",
                             width: "100%",
                         }}
+                        className="listdiv"
                     >
-                        <ul style={{ listStyleType: "none", display: "flex" }}>
-                            <li style={{ padding: "20px" }}>
+                        <ul style={{ listStyleType: "none", display: "flex", justifyContent:"space-evenly" }}>
+                            <li >
                                 <BiLogoAngular
                                     style={{ width: "40px", height: "40px" }}
                                 />
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <BiLogoReact
                                     style={{ width: "40px", height: "40px" }}
                                 ></BiLogoReact>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <BiLogoNodejs
                                     style={{ width: "40px", height: "40px" }}
                                 ></BiLogoNodejs>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <SiMysql
                                     style={{ width: "40px", height: "40px" }}
                                 ></SiMysql>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <BiLogoMongodb
                                     style={{ width: "40px", height: "40px" }}
                                 />
@@ -283,29 +286,30 @@ function OurServices() {
                             padding: "30px",
                             width: "100%",
                         }}
+                        className="listdiv"
                     >
-                        <ul style={{ listStyleType: "none", display: "flex" }}>
-                            <li style={{ padding: "20px" }}>
+                        <ul style={{ listStyleType: "none", display: "flex", justifyContent:"space-evenly" }}>
+                            <li >
                                 <BiLogoFlutter
                                     style={{ width: "40px", height: "40px" }}
                                 />
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <AiFillAndroid
                                     style={{ width: "40px", height: "40px" }}
                                 ></AiFillAndroid>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <BiLogoNodejs
                                     style={{ width: "40px", height: "40px" }}
                                 ></BiLogoNodejs>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <SiMysql
                                     style={{ width: "40px", height: "40px" }}
                                 ></SiMysql>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <BiLogoMongodb
                                     style={{ width: "40px", height: "40px" }}
                                 />
@@ -386,29 +390,30 @@ function OurServices() {
                             padding: "30px",
                             width: "100%",
                         }}
+                        className="listdiv"
                     >
-                        <ul style={{ listStyleType: "none", display: "flex" }}>
-                            <li style={{ padding: "20px" }}>
+                        <ul style={{ listStyleType: "none", display: "flex", justifyContent:"space-evenly" }}>
+                            <li >
                                 <BiLogoAngular
                                     style={{ width: "40px", height: "40px" }}
                                 />
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <BiLogoReact
                                     style={{ width: "40px", height: "40px" }}
                                 ></BiLogoReact>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <BiLogoNodejs
                                     style={{ width: "40px", height: "40px" }}
                                 ></BiLogoNodejs>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <SiMysql
                                     style={{ width: "40px", height: "40px" }}
                                 ></SiMysql>
                             </li>
-                            <li style={{ padding: "20px" }}>
+                            <li >
                                 <BiLogoMongodb
                                     style={{ width: "40px", height: "40px" }}
                                 />
