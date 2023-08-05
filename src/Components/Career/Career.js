@@ -4,8 +4,12 @@ import Opening from "./Opening/Opening";
 import Footer from '../Footer/Footer'
 import AboutCards from '../Company/AboutCards/AboutCards'
 import FooterSocialMedia from "../Footer-Social-Media/FooterSocialMedia";
+import { useEffect } from "react";
 
 function Career() {
+      useEffect(() => {
+          window.scrollTo(0, 0);
+      }, []);
     return (
         <>
             <div className="carrer-main">

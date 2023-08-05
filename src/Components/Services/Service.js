@@ -1,10 +1,14 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import './Service.css'
 import OurServices from './OurServices/OurServices';
 import FooterSocialMedia from '../Footer-Social-Media/FooterSocialMedia';
 
 function Service() {
+      useEffect(() => {
+          window.scrollTo(0, 0);
+      }, []);
   return (
+    
       <>
           <div className="service-main">
               <div className="service-haading">

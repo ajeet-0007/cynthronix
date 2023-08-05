@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Company.css";
 import companyImage from "../../assets/company_image.png"
 import AboutUs from "./AboutUs/AboutUs";
@@ -8,6 +8,10 @@ import Footer from "../Footer/Footer";
 import FooterSocialMedia from "../Footer-Social-Media/FooterSocialMedia";
 
 function Company() {
+
+     useEffect(()=>{
+        window.scrollTo(0,0);
+     }, [])
     return (
         <>
             <div className="company-main">

@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import './OurWork.css'
 import Project from '../Projects/Project';
 import Footer from '../Footer/Footer';
@@ -7,6 +7,9 @@ import ContactForm from '../Contact-Form/ContactForm';
 
 
 function OurWork() {
+      useEffect(() => {
+          window.scrollTo(0, 0);
+      }, []);
   return (
       <>
           <div className="main">
