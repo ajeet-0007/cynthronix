@@ -23,7 +23,7 @@ function Navbar() {
                 window.removeEventListener("resize", handleResize);
             };
         }, [windowWidth]);
-        console.log(open)
+        // console.log(open)
 
         
   return (

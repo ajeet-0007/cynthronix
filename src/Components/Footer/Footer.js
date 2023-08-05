@@ -3,9 +3,34 @@ import {AiOutlineMail} from 'react-icons/ai'
 import {BsTelephoneOutbound} from 'react-icons/bs'
 import './Footer.css';
 import BrandExample from './BrandExample';
+import  {useNavigate} from 'react-router-dom';
 
 
 function Footer() {
+
+    const navigate = useNavigate();
+
+    const aboutUsHandler = ()=>{
+        navigate('/')
+    }
+
+    const workHandler = () =>{
+        navigate('/')
+    }
+
+    const carrerHandler = () =>{
+        navigate('/career')
+    }
+
+    const companyHandler = () =>{
+        navigate('/company')
+    }
+
+    const contactUsHandler = ()=>{
+        navigate('/contact-us')
+    }
+
+
   return (
     <>
       <div className="footer-main">
@@ -36,11 +61,11 @@ function Footer() {
               <h3>Company</h3>
               <div className="footer-main-second-div-list">
                   <ul>
-                      <li>About Us</li>
-                      <li>Work</li>
-                      <li>Carrers</li>
-                      <li>Testimonials</li>
-                      <li>Contact-Us</li>
+                      <li onClick={aboutUsHandler}>About Us</li>
+                      <li onClick={workHandler}>Work</li>
+                      <li onClick={carrerHandler}>Carrers</li>
+                      <li onClick={companyHandler}>Company</li>
+                      <li onClick={contactUsHandler}>Contact-Us</li>
                       <li>Privacy Policy</li>
                   </ul>
               </div>
