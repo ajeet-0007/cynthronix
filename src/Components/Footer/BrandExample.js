@@ -33,9 +33,7 @@ function CollapsibleExample() {
   }
 },[])
 
- useEffect(() => {
-     window.location.reload(true);
- }, []);
+
 
   return (
       <nav
