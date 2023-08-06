@@ -71,7 +71,7 @@ function Footer() {
                       <ul>
                           <li onClick={aboutUsHandler}>About Us</li>
                           <li onClick={workHandler}>Work</li>
-                          <li onClick={carrerHandler}>Carrers</li>
+                          <li onClick={carrerHandler}>Careers</li>
                           <li onClick={companyHandler}>Company</li>
                           <li onClick={contactUsHandler}>Contact-Us</li>
                           <li>Privacy Policy</li>
