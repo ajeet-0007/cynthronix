@@ -10,6 +10,10 @@ function Career() {
       useEffect(() => {
           window.scrollTo(0, 0);
       }, []);
+
+            useEffect(() => {
+                window.location.reload(true);
+            }, []);
     return (
         <>
             <div className="carrer-main">

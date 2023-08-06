@@ -7,6 +7,11 @@ function Service() {
       useEffect(() => {
           window.scrollTo(0, 0);
       }, []);
+
+      
+            useEffect(() => {
+                window.location.reload(true);
+            }, []);
   return (
     
       <>
