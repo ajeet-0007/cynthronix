@@ -11,6 +11,14 @@ function ContactForm() {
     const [projectdescription, setProjectDescription] = useState("");
     const [date, setDate ] = useState(new Date().toLocaleString())
 
+    const redirectToGmail = () => {
+            const email = "cynthronix@gmail.com"; // Replace this with the desired email
+            const gmailUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${encodeURIComponent(
+                email
+            )}`;
+        window.open(gmailUrl, "_blank"); // Replace this URL with the Gmail URL
+    };
+
     const formhandler = (event) => {
         event.preventDefault();
         const data = {
@@ -47,8 +55,8 @@ function ContactForm() {
                     <div>
                         <h5>
                             If you have project requirements or you feel like
-                            knowing Cynthronix, just the fill the form and we are
-                            just a click away.
+                            knowing Cynthronix, just the fill the form and we
+                            are just a click away.
                         </h5>
                     </div>
                     <div>
@@ -56,7 +64,7 @@ function ContactForm() {
                             <li>
                                 <AiOutlineMail></AiOutlineMail>
                             </li>
-                            <li>
+                            <li onClick={redirectToGmail} target="_blank">
                                 <h6>cynthronix@gmail.com</h6>
                             </li>
                         </ul>
@@ -74,7 +82,6 @@ function ContactForm() {
                     <div>
                         <ul>
                             <li>
-                                
                                 <CiLinkedin></CiLinkedin>
                             </li>
                             <li>
