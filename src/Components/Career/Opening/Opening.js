@@ -22,7 +22,7 @@ function Opening() {
                 </div>
                 <div>
                     <div>
-                        <h4>Sr. Frontend Engineer</h4>
+                        <h4>Sr. Backend Engineer</h4>
                     </div>
 
                     <div>
@@ -34,7 +34,7 @@ function Opening() {
                 </div>
                 <div>
                     <div>
-                        <h4>Sr. Frontend Engineer</h4>
+                        <h4>Sr. UI/UX Engineer</h4>
                     </div>
 
                     <div>
@@ -46,7 +46,7 @@ function Opening() {
                 </div>
                 <div>
                     <div>
-                        <h4>Sr. Frontend Engineer</h4>
+                        <h4>Sr. Business Analyst</h4>
                     </div>
 
                     <div>
@@ -58,7 +58,7 @@ function Opening() {
                 </div>
                 <div>
                     <div>
-                        <h4>Sr. Frontend Engineer</h4>
+                        <h4>Sr. Chatbot Engineer</h4>
                     </div>
 
                     <div>
