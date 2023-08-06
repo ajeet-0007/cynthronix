@@ -25,19 +25,19 @@ function App() {
                       <Route path="/" element={<SharedLayout></SharedLayout>}>
                           <Route index element={<OurWork></OurWork>}></Route>
                           <Route
-                              path="services"
+                              path="/services"
                               element={<Service></Service>}
                           ></Route>
                           <Route
-                              path="company"
+                              path="/company"
                               element={<Company></Company>}
                           ></Route>
                           <Route
-                              path="career"
+                              path="/career"
                               element={<Career></Career>}
                           ></Route>
                           <Route
-                              path="contact-us"
+                              path="/contact-us"
                               element={<ContactUs></ContactUs>}
                           ></Route>
                       </Route>
