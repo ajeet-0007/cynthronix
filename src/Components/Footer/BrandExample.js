@@ -33,6 +33,10 @@ function CollapsibleExample() {
   }
 },[])
 
+ useEffect(() => {
+     window.location.reload(true);
+ }, []);
+
   return (
       <nav
           class="navbar navbar-expand-lg bg-body-tertiary  ticky-top"
