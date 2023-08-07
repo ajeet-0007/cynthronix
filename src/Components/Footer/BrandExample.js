@@ -62,7 +62,7 @@ function CollapsibleExample() {
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
                           <NavLink
-                              to="#/"
+                              to="/"
                               class="nav-link active"
                               style={({ isActive }) => {
                                   return {
@@ -75,7 +75,7 @@ function CollapsibleExample() {
                       </li>
                       <li class="nav-item">
                           <NavLink
-                              to="#/services"
+                              to="/services"
                               class="nav-link active"
                               style={({ isActive }) => {
                                   return {
@@ -91,7 +91,7 @@ function CollapsibleExample() {
                           
                       >
                           <NavLink
-                              to="#/company"
+                              to="/company"
                               class="nav-link active"
                               style={({ isActive }) => {
                                   return {
@@ -106,7 +106,7 @@ function CollapsibleExample() {
                           class="nav-item"
                       >
                           <NavLink
-                              to="#/career"
+                              to="/career"
                               class="nav-link active"
                               style={({ isActive }) => {
                                   return {
@@ -119,7 +119,7 @@ function CollapsibleExample() {
                       </li>
                       <li class="nav-item">
                           <NavLink
-                              to="#/contact-us"
+                              to="/contact-us"
                               class="nav-link active"
                               style={({ isActive }) => {
                                   return {

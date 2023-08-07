@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import './App.css';
-import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes,Switch } from "react-router-dom";
 import SharedLayout from "./Components/SharedLayout/SharedLayout";
 import OurWork from "./Components/OurWork/OurWork"
 import Service from "./Components/Services/Service";
@@ -19,37 +19,33 @@ function App() {
   return (
       <>
           <div className="App">
-              <BrowserRouter>
+          
                   <Routes>
-                      <Switch>
+                      <Route path="/" element={<SharedLayout></SharedLayout>}>
+                          <Route path="/" element={<OurWork></OurWork>}></Route>
                           <Route
-                              path="/"
-                              element={<SharedLayout></SharedLayout>}
-                          >
-                              <Route
-                                  index
-                                  element={<OurWork></OurWork>}
-                              ></Route>
-                              <Route
-                                  path="/services"
-                                  element={<Service></Service>}
-                              ></Route>
-                              <Route
-                                  path="/company"
-                                  element={<Company></Company>}
-                              ></Route>
-                              <Route
-                                  path="/career"
-                                  element={<Career></Career>}
-                              ></Route>
-                              <Route
-                                  path="/contact-us"
-                                  element={<ContactUs></ContactUs>}
-                              ></Route>
-                          </Route>
-                      </Switch>
+                              path="/services"
+                              element={<Service></Service>}
+                          ></Route>
+                          <Route
+                              path="/company"
+                              element={<Company></Company>}
+                          ></Route>
+                          <Route
+                              path="/career"
+                              element={<Career></Career>}
+                          ></Route>
+                          <Route
+                              path="/contact-us"
+                              element={<ContactUs></ContactUs>}
+                          ></Route>
+                      </Route>
                   </Routes>
-              </BrowserRouter>
+
+                  {/* <Route path="/" element={<SharedLayout></SharedLayout>}> */}
+
+                  {/* </Route> */}
+            
           </div>
       </>
   );
