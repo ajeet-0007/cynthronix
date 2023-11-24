@@ -1,8 +1,9 @@
-import { React, useState } from "react";
+import { React, useState, useRef } from "react";
 import "./ContactForm.css";
 import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
 import axios from "axios";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
     const [name, setName] = useState("");
@@ -41,6 +42,32 @@ function ContactForm() {
             });
        
     };
+
+     const form = useRef();
+
+     const sendEmail = (e) => {
+         e.preventDefault();
+
+         emailjs
+             .sendForm(
+                 "service_76pfwag",
+                 "template_f7k57mm",
+                 form.current,
+                 "dE-9nD4fgXtBMa7Vz"
+             )
+             .then(
+                 (result) => {
+                     console.log(result.text);
+                     setEmail("");
+                     setName("");
+                     setPhoneNumber("");
+                     setProjectDescription("");
+                 },
+                 (error) => {
+                     console.log(error.text);
+                 }
+             );
+     };
 
     return (
         <div className="contact-form-main">
@@ -91,13 +118,14 @@ function ContactForm() {
                     </div>
                 </div>
                 <div className="contact-form-div-right">
-                    <form onSubmit={formhandler}>
+                    <form ref={form} onSubmit={sendEmail}>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Name</label>
                             <input
                                 type="text"
                                 class="form-control"
                                 id="name"
+                                name="name"
                                 aria-describedby="name"
                                 placeholder="Enter name"
                                 value={name}
@@ -114,6 +142,7 @@ function ContactForm() {
                                 type="email"
                                 class="form-control"
                                 id="exampleInputEmail1"
+                                name="email"
                                 aria-describedby="emailHelp"
                                 placeholder="Enter email"
                                 value={email}
@@ -131,6 +160,7 @@ function ContactForm() {
                                 type="text"
                                 class="form-control"
                                 id="budget"
+                                name="phone_number"
                                 aria-describedby="budgeet"
                                 placeholder="Enter phone number"
                                 value={phonenumber}
@@ -148,6 +178,7 @@ function ContactForm() {
                                 class="form-control"
                                 id="exampleFormControlTextarea1"
                                 rows="3"
+                                name="project_description"
                                 placeholder="Enter project description"
                                 value={projectdescription}
                                 onChange={(e) => {

@@ -20,7 +20,7 @@ function App() {
       <>
           
           <div className="App">
-              <BrowserRouter>
+              
                   <Routes>
                       <Route path="/" element={<SharedLayout></SharedLayout>}>
                           <Route index element={<OurWork></OurWork>}></Route>
@@ -42,7 +42,7 @@ function App() {
                           ></Route>
                       </Route>
                   </Routes>
-              </BrowserRouter>
+             
           </div>
       </>
   );
