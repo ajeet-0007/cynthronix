@@ -2,7 +2,6 @@ import { React, useState, useRef } from "react";
 import "./ContactForm.css";
 import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
-import axios from "axios";
 import emailjs from "@emailjs/browser";
 
 function ContactForm() {
@@ -20,28 +19,6 @@ function ContactForm() {
         window.open(gmailUrl, "_blank"); // Replace this URL with the Gmail URL
     };
 
-    const formhandler = (event) => {
-        event.preventDefault();
-        const data = {
-            Name: name,
-            Email: email,
-            Phone_Number: phonenumber,
-            Project_Description: projectdescription,
-            Date: date
-        };
-        axios
-            .post(
-                "https://sheet.best/api/sheets/f1652a56-9eea-4c30-89a4-71793caf6247",
-                data
-            )
-            .then((response) => {
-                 setEmail("");
-                 setName("");
-                 setPhoneNumber("");
-                 setProjectDescription("");
-            });
-       
-    };
 
      const form = useRef();
 
